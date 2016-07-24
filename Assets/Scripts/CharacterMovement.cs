@@ -20,17 +20,26 @@ public class CharacterMovement : MonoBehaviour {
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
+
+        
         if (Input.GetKey("1"))
         {
             keyPressed = 1;
+            characterAnimator.SetBool("isWalking", false);
         }
         else if (Input.GetKey("2"))
         {
             keyPressed = 2;
+            characterAnimator.SetBool("isWalking", false);
         }
         else if (Input.GetKey("3"))
         {
             keyPressed = 3;
+            characterAnimator.SetBool("isWalking", true);
+        }
+        if (Input.GetKeyDown("e"))
+        {
+            characterAnimator.SetTrigger("Attack");
         }
 
         Movement(horizontal, vertical);
@@ -79,7 +88,6 @@ public class CharacterMovement : MonoBehaviour {
 
     void OnCollisionEnter(Collision collisionObject)
     {
-        //GetComponent<Rigidbody>().velocity = Vector3.zero;
         characterAnimator.SetFloat("speed", 0.00f);
     }
     
