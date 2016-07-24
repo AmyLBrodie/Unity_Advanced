@@ -9,7 +9,7 @@ public class BulletControl : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Target")
         {
-            //TargetParticles.GetComponent<MeshRenderer>().material = collision.gameObject.GetComponent<MeshRenderer>().material;
+            TargetParticles.GetComponent<ParticleSystem>().GetComponent<Renderer>().material = collision.gameObject.GetComponent<MeshRenderer>().material;
             Instantiate(TargetParticles, collision.transform.position, collision.transform.rotation);
             Destroy(gameObject);
             Destroy(collision.gameObject);

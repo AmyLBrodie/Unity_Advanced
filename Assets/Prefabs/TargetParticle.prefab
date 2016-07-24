@@ -28,7 +28,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 3.7184868, y: 3.57, z: -3.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -41,7 +41,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 082a15193615c7944b3ca3c215947a4b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b8c539f26807dac4e94a227e0f574d2f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -114,7 +114,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 176648}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 848dfd47dc4a14c4196072e09f26fcf4, type: 3}
+  m_Script: {fileID: 11500000, guid: caadced1cabf3434abb77a3008095770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!198 &19880764
@@ -332,7 +332,7 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 4294967295
+        rgba: 4278190080
       minMaxState: 0
     startSize:
       scalar: 0.3
@@ -691,7 +691,7 @@ ParticleSystem:
       maxGradient:
         key0:
           serializedVersion: 2
-          rgba: 4294967295
+          rgba: 4278716424
         key1:
           serializedVersion: 2
           rgba: 16777215
@@ -1616,7 +1616,7 @@ ParticleSystemRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: a4eae657be23e914587db1c303a7b607, type: 2}
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
