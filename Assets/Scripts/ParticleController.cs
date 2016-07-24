@@ -12,7 +12,8 @@ public class ParticleController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    if (particles.isStopped)
+        // checks if particle animation is finished and then destroys particle system
+        if (particles.isStopped)
         {
             Destroy(gameObject);
         }

@@ -34,19 +34,21 @@ public class TargetSpawner : MonoBehaviour {
         numberOfCubes = Random.Range(7,15);
         numberOfSpheres = Random.Range(7, 15);
 
+        // spawn a random number of cubes in random positions with random materials
         for (int i=0; i< numberOfCubes; i++)
         {
             Vector3 spawnPosition = transform.position;
-            spawnPosition += new Vector3(Random.Range(-9.0f,9.0f),0.15f,Random.Range(-9.0f,9.0f));
-            cubeTarget.GetComponent<MeshRenderer>().material = materials[Random.Range(0,9)];
+            spawnPosition += new Vector3(Random.Range(-9.0f,9.0f),0.15f,Random.Range(-9.0f,9.0f)); // set spawn position
+            cubeTarget.GetComponent<MeshRenderer>().material = materials[Random.Range(0,9)]; // set material
             Instantiate(cubeTarget, spawnPosition, transform.rotation);
         }
 
+        // spawn a random number of spheres in random positions with random materials
         for (int i = 0; i < numberOfSpheres; i++)
         {
             Vector3 spawnPosition = transform.position;
-            spawnPosition += new Vector3(Random.Range(-9.0f, 9.0f), 0.15f, Random.Range(-9.0f, 9.0f));
-            sphereTarget.GetComponent<MeshRenderer>().material = materials[Random.Range(0,9)];
+            spawnPosition += new Vector3(Random.Range(-9.0f, 9.0f), 0.15f, Random.Range(-9.0f, 9.0f)); // set spawn position
+            sphereTarget.GetComponent<MeshRenderer>().material = materials[Random.Range(0,9)]; // set material
             Instantiate(sphereTarget, spawnPosition, transform.rotation);
         }
     }
