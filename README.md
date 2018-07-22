@@ -1,4 +1,6 @@
-README for Unity Advanced Practical - BRDAMY004
+# Unity_Advanced
+
+This game was created in unity for a third year games development course
 
 Player Movement
 	up arrow = move forward in world coordinates
